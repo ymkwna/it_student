@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+
+<script type="text/javascript" language="js">
+    function selectboxChange(){
+        var target = document.getElementById("maintext");
+        var title = document.getElementById("title");
+        var selindex = document.form1.select1.selectedIndex;
+
+        switch (selindex) {
+            case 0:
+            title.value =　"メニュー";
+            target.value = "hogehoge";
+            break;
+            
+            case 1:
+            title.value = "ラ・リーがとは";
+            target.value ="ラ・リーガとはスペインのプロサッカーリーグ。\n「ラ・リーガ サンタンデール」と称されることもある。\n2009年頃から2018年まではヨーロッパ屈指のリーグであったのも記憶に新しいではないでしょう。\n特にFCバルセロナとレアルマドリードの一戦はエルクラシコと呼ばれ、世界中が最も注目する一戦といわれる。";
+            break;
+
+            case 2:
+            title.value = "リーグ屈指の選手(2020~2021)";
+            target.value ="1.世界最高の選手　”リオネル・メッシ”　\n\n2.最恐のストライカー　”ルイス・スアレス”\n\n3.レアルの王子様　”ルカ・モドリッチ”\n\n4.最高の男　”カリム・ベンゼマ”\n\n5.W杯優勝の立役者　”アントワーヌ・グリーズマン”\n\n";
+            break;
+
+            case 3:
+            title.value = "リーグ屈指の監督(2020~2021)";
+            target.value ="1.闘犬　”ディオゴ・シメオネ”\n\n2.";
+            break;
+
+            case 4:
+            title.value = "これからの注目選手2021～";
+            target.value ="1.バルサの未来のエース　”アンス・ファティ”\n\n2.イニエスタの再来　”ペドリ・ゴンザレス”\n\n3.新しい攻撃的SB　”セルジーニョ・デスト”\n\n4.アトレティコの新星　”ジョアン・フェリックス”\n\n5.ブラジルの未来　”ヴィニシウス・ジュニオール”\n\n6.スウェーデンの怪物”アレクサンデル・イサク”\n\n7.最高のCB候補　”ジュール・クンデ”";
+            break;
+        }
+    }
+</script>
+</head>
+<body>
+    <div class = "box">
+    <h1>ラ・リーガ　チャンネル</h1></div>
+
+   ↓好きなメニューを選択してね↓
+    <form name="form1" action=" ">
+    <select id = "select1" onchange="selectboxChange ();">
+    <option>メニュー</option>
+    <option>ラ・リーがとは</option>
+    <option>リーグ屈指の選手(2020~2021)</option>
+    <option>リーグ屈指の監督(2020~2021)</option>
+    <option>これからの注目選手2021～</option>
+</select>
+</form>
+<hr>
+<input type="text" value="メニュー" size="40"  id="title"><br>
+<textarea rows="50" cols="120" id="maintext">
+hogehoge
+</textarea><br><br><br>
+<hr>
+ラ・リーガチャンネルとは・・・<br>
+アトレティコ大好きお兄さんが独自の偏見と評価で運営しております。<br>
+皆さんにスペインサッカーの良さが伝わるよう頑張っていきます。<br>
+
+</body>
+</html>

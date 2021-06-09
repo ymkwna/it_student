@@ -1,0 +1,16 @@
+
+body{
+    background-color: crimson;
+}
+
+.box{
+    width: 400px;
+    height: 350px;
+    background-image:url("H5P2iZ_b.jpg");
+	background-size: 400px;
+	background-repeat: no-repeat;
+}
+
+.hi{
+    font-size: 50px;
+}
